@@ -1,5 +1,4 @@
-# cs50
-cs50
+
 #include <stdio.h>
 #include <cs50.h>
 
