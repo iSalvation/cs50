@@ -21,7 +21,7 @@ do
 {
     dollars = get_float("Change: ");
 }
-    while (dollars < 0.01);
+    while (dollars < 0);
 
     int coins = round(dollars * 100);
     coins25 = coins / 25;
