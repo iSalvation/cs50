@@ -1,0 +1,37 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h> 
+
+int main(void)
+{
+ 
+    int coins25 =0;
+    int coins10 =0;
+    int coins5 =0;
+    int coins1 =0;
+
+    float dollars;
+
+    int c25 =0;
+    int c10 =0;
+    int c5 =0;
+    int result =0;
+
+do 
+{
+    dollars = get_float("Change: ");
+}
+    while (dollars < 0.01);
+
+    int coins = round(dollars * 100);
+    coins25 = coins / 25;
+    c25 = coins % 25;
+    coins10 = c25 / 10;
+    c10 = c25 % 10;
+    coins5 = c10 / 5;
+    c5 = c10 % 5;
+    coins1 = c5 / 1;
+    result = coins25 + coins10 +coins5 +coins1;
+
+    printf("%i\n", result);
+}
