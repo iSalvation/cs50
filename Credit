@@ -53,21 +53,14 @@ int main(void)
     sum1 = (v1+v01+c2+v3+v03+c4+v5+v05+c6+v7+v07+c8+v9+v09+c10+v11+v011+c12+v13+v013+c14+v15+v015+c16)%10;
         if (sum1 == 0) 
         {
-            if (c1/2==4)
-            {
-                printf("VISA\n");
-                
-                } 
-                else if (c1/2==3)
-                {
-                        if (c2==4) {printf("AMEX\n");}
-                        else if (c2==7){printf("AMEX\n");}
+                if (c1/2==4|c7/2==4){printf("VISA\n");} 
+                if (c2==3){
+                if (c3/2==4||c2==3) {printf("AMEX\n");}
+                else if (c3/2==7||c2==3){printf("AMEX\n");}
                 }
-                else if (c1/2==5){
-                        if (c2<=5){printf("MASTERCARD\n");}
-                }
-            }
-         
-            else {     printf("INVALID\n"); }
-
+                if (c1/2==5){if (c2<=5){printf("MASTERCARD\n");}
+                else{printf("INVALID\n");}}
+         }
+                else {printf("INVALID\n");}
+        
 }
