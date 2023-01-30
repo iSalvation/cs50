@@ -1,0 +1,15 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+int main(void)
+{
+        do 
+           {
+                    string text1 = get_string("plaintext: \n");
+           }
+        while
+        printf("Text: %s\n", text1);
+
+}
